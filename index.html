@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>A vos raquettes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-blue">
+        <a class="navbar-brand">Commencez ici -></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#course">Réserver un court</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ground">Réserver un terrain </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ex">Intervew d'expert</a>
+                <li class="nav-item" style="padding-right: 5% ;">
+                    <a class="nav-link" href=""> <button class="btn btn-danger">Aide!!</button> </a>
+                </li>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/logo-tennis.jpg" width="130" height="130"> A vos raquettes!!! </h1>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> A propos de nous</h1>
+        <p class="p-4 my-3" style="font-size: 25px"> Nous sommes un site d'organisme communautaire situé Hull/Gatineau
+        </p>
+        <p style="font-size: 25px; padding-left: 1.5rem">Nous procurons la <strong>meilleur</strong> expérience de
+            tennis
+            à nos clients customers
+        </p>
+    </div>
+    <!-- Choix de cours -->
+    <h2 id="course">Nos cours offerts </h2>
+    <table class="table table-info table-hover">
+        <img src="images/icons8-service-bell-64.png" alt="service icon" srcset="">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <h2>Cours</h2>
+                </th>
+                <th scope="col">
+                    <h2>Price</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Débutant </td>
+                <td>150$</td>
+            </tr>
+
+            <tr>
+                <td>Intermediare </td>
+                <td>170$</td>
+            </tr>
+
+            <tr>
+                <td>Professionnel</td>
+                <td>180$</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="experts" style="background-color: lightgrey;">
+        <img src="images/expertIcone.jpg" alt="expert icone" srcset="" margin-left="50%" width="300px" height="300px">
+        <label for="expert">
+            <h3>Choisissez un cours:</h3>
+        </label>
+
+        <select name="expert" id="cours">
+            <option value="cours1" id="cours1">Choisissez un cours</option>
+            <option value="cours1" id="cours1">Debutant</option>
+            <option value="cours2" id="cours2">Intermediaire</option>
+            <option value="cours3" id="cours3">Avancee</option>
+        </select>
+    </div>
+    </div> <br>
+    <!--Choix de terrain -->
+    <h2 id="ground">Tous nos terrains </h2>
+    <table class="table table-info table-hover" id="ground">
+        <img src="images/icons8-service-bell-64.png" alt="service icon" srcset="">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <h2>Terrains</h2>
+                </th>
+                <th scope="col">
+                    <h2>Prix</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Terrain 1</td>
+                <td>150$</td>
+            </tr>
+
+            <tr>
+                <td>Terrain 2</td>
+                <td>170$</td>
+            </tr>
+
+            <tr>
+                <td>Terrain 3</td>
+                <td>180$</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="terrain" style="background-color: lightgrey;">
+        <label for="expert">
+            <h3>Choisissez un terrain:</h3>
+        </label>
+        <select name="expert" id="terrain">
+            <option value="terre1" id="">Choisissez un terrain</option>
+            <option value="terre2" id="terrain1">terrain 1</option>
+            <option value="terre3" id="terrain2">terrain 2</option>
+            <option value="terre4" id="terrain3">terrain 3</option>
+        </select>
+    </div><br>
+
+
+    <!-- Formulaire -->
+    <h2> <img src="images/icons8-calendar.gif" width="50" height="50"> Saisissez vos informations pour le rendez-vous
+    </h2>
+
+    <form id="rendez-vous">
+
+        <div class="form-group">
+            <label for="Nom" name="fname">Nom:</label>
+            <input type="text" id="nom" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Prenom">Prénom</label>
+            <input type="text" id="prenom" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Couriel:</label>
+            <input type="email" class="form-control" id="email" placeholder="user@gmail.com"
+                title="We use it to remind you the date of the appointment" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Numéro de téléphone:</label>
+            <input value="" type="text" id="phone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date"> Choisissez une date de <strong>cours</strong> disponible:</label>
+            <input type="text" class="form-control" id="dateInput" required title="Appointement date">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="date"> Choisissez une date de <strong>terrain</strong> disponible:</label>
+            <input type="text" class="form-control" id="date" required title="Appointement date">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="time">Carte de crédit: <img src="images/cartedecredit.jpg" alt="payment" width="80" height="80">
+                <br></label>
+            <input type="text" id="debit" class="form-control"
+                title="We ask for your credit card number in case of no-show, 20$ will be charged." required>
+        </div> <br>
+
+        <p id="confirmation"></p>
+        <button type="submit" class="btn btn-primary" id="inscription" onclick="confirmMessage()">Confirmer</button>
+    </form>
+
+    <!--Intervew -->
+
+
+    <h1 id="ex">Suivez les intervew avec les experts ici</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <iframe src="https://www.youtube.com/embed/zOqekLBuRqo" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="card-body">
+                <p class="card-text"> Stan Wawrinka
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <iframe src="https://www.youtube.com/embed/zkYiH557xI4" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="card-body">
+                <p class="card-text">Serena Williams</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <iframe src="https://www.youtube.com/embed/eOwolGoaEEY" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="card-body">
+                <p class="card-text">Raphael Nadal</p>
+            </div>
+        </div>
+    </div> <br><br>
+
+</body>
+
+<footer style="background-color: lightcoral;">
+    <h3> <strong>Communauté</strong> </h3>
+    <p> <a href="https://fr-ca.facebook.com/"><img src="images/facebook.jpg" alt="" srcset="" width="200"
+                height="200"></a>
+        <i style="font-size:large;"><strong>Créer des liens aussi solides que votre passion sur notre facebook et
+                instagram!!!</strong></i>
+    </p>
+</footer>
+
+</html>
